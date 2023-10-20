@@ -7,7 +7,7 @@ import Header from './components/Header/Header';
 import Home from './pages/Home/index';
 import Error from './pages/Error/index';
 import Product from './pages/Product/index';
-import Basket from './pages/Basket/index';
+import Cart from './pages/Cart/index';
 import Login from './pages/Login/index';
 import Footer from './components/Footer/Footer';
 
@@ -15,16 +15,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header/>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/product" element={<Product/>} />
-          <Route path="/basket" element={<Basket/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/404" element={<Error/>} />
-          <Route path="*" element={<Home/>} />
-        </Routes>
-      <Footer/>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/404" element={<Error />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react';
 
 const Footer = () => {
-return (<p>Année - mentions légales</p>)
-}
+  return <p>Année - mentions légales</p>;
+};
 
-export default Footer
+export default Footer;
